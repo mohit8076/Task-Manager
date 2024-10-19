@@ -1,0 +1,136 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F4;
+    color: #264653;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #3E4C59;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: box-shadow 0.2s;
+}
+
+.task-list li:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-list li .priority-label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.high {
+    color: #E76F51; /* Coral Red */
+}
+
+.medium {
+    color: #F9C74F; /* Light Yellow */
+}
+
+.low {
+    color: #90BE6D; /* Soft Green */
+}
+
+.completed {
+    background-color: #A8DADC; /* Light Teal */
+    text-decoration: line-through;
+}
+
+.button-div{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+button {
+    background-color: #2A9D8F; /* Teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #21867A; /* Darker Teal on hover */
+}
+
+form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+    input, select {
+        font-size: 0.9rem;
+    }
+}
